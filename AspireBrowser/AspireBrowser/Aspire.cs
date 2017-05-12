@@ -12,9 +12,12 @@ namespace AspireBrowser
 {
     public partial class Aspires : Form
     {
+        private int childFormNumber = 0;
+
         public Aspires()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,6 +38,24 @@ namespace AspireBrowser
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void New_Click(object sender, EventArgs e)
+        {
+            Onglet childForm = new Onglet();
+            childForm.MdiParent = this;
+            childForm.Text = "Fenêtre " + childFormNumber++;
+            childForm.Show();
+        }
+
+        private void rechercherToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

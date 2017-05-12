@@ -57,11 +57,11 @@
     <Compile Include="Aspire.Designer.cs">
       <DependentUpon>Aspire.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Onglet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Onglet.Designer.cs">
+      <DependentUpon>Onglet.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
@@ -74,8 +74,8 @@
     <EmbeddedResource Include="Aspire.resx">
       <DependentUpon>Aspire.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Onglet.resx">
+      <DependentUpon>Onglet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>

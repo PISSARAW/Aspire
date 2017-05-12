@@ -103,5 +103,15 @@ namespace AspireBrowser
                 childForm.Close();
             }
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

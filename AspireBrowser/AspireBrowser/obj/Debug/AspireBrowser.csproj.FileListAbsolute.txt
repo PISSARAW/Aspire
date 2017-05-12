@@ -7,3 +7,5 @@ C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\Aspi
 C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.csproj.GenerateResource.Cache
 C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.exe
 C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.pdb
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.Onglet.resources
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.MDIParent1.resources

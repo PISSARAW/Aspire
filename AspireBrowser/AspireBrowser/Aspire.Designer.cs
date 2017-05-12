@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aspires));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menus = new System.Windows.Forms.MenuStrip();
             this.New = new System.Windows.Forms.ToolStripMenuItem();
             this.Play = new System.Windows.Forms.ToolStripMenuItem();
             this.Image = new System.Windows.Forms.ToolStripMenuItem();
             this.File = new System.Windows.Forms.ToolStripMenuItem();
             this.Download = new System.Windows.Forms.ToolStripMenuItem();
-            this.search = new System.Windows.Forms.TextBox();
             this.Parameter = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,64 +45,57 @@
             this.plusdoutilsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parametresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menus.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menus
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menus.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.New,
             this.Play,
             this.Image,
             this.File,
             this.Download,
             this.Parameter});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(131, 436);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "📷";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.menus.Location = new System.Drawing.Point(0, 0);
+            this.menus.Name = "menus";
+            this.menus.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menus.Size = new System.Drawing.Size(98, 436);
+            this.menus.TabIndex = 0;
+            this.menus.Text = "📷";
+            this.menus.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // New
             // 
             this.New.Name = "New";
-            this.New.Size = new System.Drawing.Size(118, 19);
+            this.New.Size = new System.Drawing.Size(85, 19);
             this.New.Text = "➕";
+            this.New.Click += new System.EventHandler(this.New_Click);
             // 
             // Play
             // 
             this.Play.Name = "Play";
-            this.Play.Size = new System.Drawing.Size(118, 19);
+            this.Play.Size = new System.Drawing.Size(85, 19);
             this.Play.Text = "▶";
             // 
             // Image
             // 
             this.Image.Name = "Image";
-            this.Image.Size = new System.Drawing.Size(118, 19);
+            this.Image.Size = new System.Drawing.Size(85, 19);
             this.Image.Text = "📷";
             // 
             // File
             // 
             this.File.Name = "File";
-            this.File.Size = new System.Drawing.Size(118, 19);
+            this.File.Size = new System.Drawing.Size(85, 19);
             this.File.Text = "🌅";
             // 
             // Download
             // 
             this.Download.Name = "Download";
-            this.Download.Size = new System.Drawing.Size(118, 19);
+            this.Download.Size = new System.Drawing.Size(85, 19);
             this.Download.Text = "📥";
-            // 
-            // search
-            // 
-            this.search.Location = new System.Drawing.Point(203, 59);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(436, 20);
-            this.search.TabIndex = 1;
             // 
             // Parameter
             // 
@@ -119,17 +111,23 @@
             this.quitterToolStripMenuItem});
             this.Parameter.Margin = new System.Windows.Forms.Padding(0, 315, 0, 0);
             this.Parameter.Name = "Parameter";
-            this.Parameter.Size = new System.Drawing.Size(118, 19);
-            this.Parameter.Text = "toolStripMenuItem7";
+            this.Parameter.Size = new System.Drawing.Size(85, 19);
+            this.Parameter.Text = "🔧";
             // 
             // rechercherToolStripMenuItem
             // 
+            this.rechercherToolStripMenuItem.BackColor = System.Drawing.SystemColors.Window;
+            this.rechercherToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.rechercherToolStripMenuItem.Name = "rechercherToolStripMenuItem";
             this.rechercherToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.rechercherToolStripMenuItem.Text = "Rechercher";
+            this.rechercherToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.rechercherToolStripMenuItem.Click += new System.EventHandler(this.rechercherToolStripMenuItem_Click);
             // 
             // imprimerToolStripMenuItem
             // 
+            this.imprimerToolStripMenuItem.BackColor = System.Drawing.SystemColors.Window;
+            this.imprimerToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.imprimerToolStripMenuItem.Name = "imprimerToolStripMenuItem";
             this.imprimerToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.imprimerToolStripMenuItem.Text = "Imprimer";
@@ -196,16 +194,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(842, 436);
-            this.Controls.Add(this.search);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menus);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menus;
             this.Name = "Aspires";
             this.Text = "AspireBrowser";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menus.ResumeLayout(false);
+            this.menus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,13 +210,12 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menus;
         private System.Windows.Forms.ToolStripMenuItem New;
         private System.Windows.Forms.ToolStripMenuItem Play;
         private System.Windows.Forms.ToolStripMenuItem Image;
         private System.Windows.Forms.ToolStripMenuItem File;
         private System.Windows.Forms.ToolStripMenuItem Download;
-        private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.ToolStripMenuItem Parameter;
         private System.Windows.Forms.ToolStripMenuItem rechercherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imprimerToolStripMenuItem;
