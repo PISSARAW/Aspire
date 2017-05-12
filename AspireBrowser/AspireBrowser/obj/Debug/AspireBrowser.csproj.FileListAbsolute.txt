@@ -1,0 +1,9 @@
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\bin\Debug\AspireBrowser.exe.config
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\bin\Debug\AspireBrowser.exe
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\bin\Debug\AspireBrowser.pdb
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.Aspires.resources
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.Properties.Resources.resources
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.csproj.GenerateResource.Cache
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.exe
+C:\Users\acer\Documents\GitHub\Aspire\AspireBrowser\AspireBrowser\obj\Debug\AspireBrowser.pdb
