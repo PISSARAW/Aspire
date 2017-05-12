@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace AspireBrowser
 {
-    public partial class Home : Control
+    public partial class Home : Form
     {
         public Home()
         {
             InitializeComponent();
         }
 
-        protected override void OnPaint(PaintEventArgs pe)
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
-            base.OnPaint(pe);
+
         }
     }
 }
